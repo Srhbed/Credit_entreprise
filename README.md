@@ -1,0 +1,2 @@
+# Credit_entreprise
+L'objectif de l'US SBA est d'aider les petites entreprises à obtenir un crédit. Le but de ce projet est de prédire si les entreprises seront en mesure de rembourser leur prêt ou non. Vous devrez utiliser une classification binaire pour prédire si le prêt doit être accordé ou non.On va FastAPI pour rendre le modèle accessible via une API et développerez une interface graphique avec Django pour consommer notre API. 
