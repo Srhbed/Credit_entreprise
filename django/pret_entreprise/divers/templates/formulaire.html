@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+     <header>
+ <nav>
+    <div class="px-3 py-2 text-bg-dark">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+
+          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-1 text-small">
+            <li>
+              <a href="#" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"></use></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"></use></svg>
+                
+              </a>
+            </li>
+
+
+            <li>
+              <a href="#" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"></use></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"></use></svg>
+                
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"></use></svg>
+                
+              </a>
+            </li>
+           
+       
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="px-3 py-2 border-bottom mb-3">
+      <div class="container d-flex flex-wrap justify-content-center">
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <section  class =" vh-100 "  > 
+      <div  class =" conteneur h-100 " > 
+        <div  class =" ligne d-flex justifier-le contenu-le centre d'aligner les-articles-centre h-100 " > 
+          <div  class =" col-lg-12 col-xl-11 " > 
+            <div  class =" texte de carte-noir  "  style =" margin-top:1%; margin-right: 5%; margin-left: 15%; background-color:gray" > 
+              <div  class =" carte-corps p-md-5  " > 
+                <div  class =" row justify-content-center " > 
+                  <div  class =" col-md-8 col-lg-6 col-xl-5 order-2 order-lg-1 " > 
+                      <p  class =" text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4 "  > <a > US SBA </a> </p> 
+           
+            
+                <div class="pricing-headr p-3 pb-md-4 mx-auto text-center">
+                <h2>Est-ce que ce prêt doit être accordé ou rejetté ?</h2>
+                </div>
+            </header>
+            <main>
+                <div class='container'>
+                        <form method="post">
+                            {% csrf_token %}
+
+                            {% load crispy_forms_tags %}
+                            {{form|crispy}}
+                            <br>
+                            <button type='submit'> Vérifier </button>
+                            <br>
+                        </form>
+                        <br>
+                        {{response}}
+                </div>
+            </main>
+    </div>
+
+
+</section>
+
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
