@@ -1,0 +1,7 @@
+django 
+uvicorn
+django-crispy-forms  
+pandas
+pydantic
+scikit_learn
+requests

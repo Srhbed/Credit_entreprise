@@ -1,0 +1,10 @@
+django
+uvicorn
+fastapi
+streamlit
+django-crispy-forms  
+pandas
+pydantic
+scikit_learn
+requests
+xgboost
